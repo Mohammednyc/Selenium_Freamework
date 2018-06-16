@@ -3,33 +3,30 @@ package testNGclass;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 public class JavaScriptExecutors {
-	
-	
-    public static void main(String args[]) throws Exception {
+        public static void main(String args[]) throws Exception {
         System.setProperty("webdriver.gecko.driver","./DriverBrowser/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("http://demo.automationtesting.in/Index.html");
         driver.manage().window().maximize();
         
-   //JavaScriptExecutor to execute the JavaScript to interact with the web elements. 
+        //JavaScriptExecutor to execute the JavaScript to interact with the web elements. 
         JavascriptExecutor js = (JavascriptExecutor)driver;
         
-   //How to enter value into textbox:
+        //How to enter value into textbox:
         js.executeScript("document.getElementById('email').value='krishna@gmail.com'");
         
-   //How to click a button
+        //How to click a button
         js.executeScript("document.querySelector('#enterimg').click()");
         
-   //How to refresh a window:     
+         //How to refresh a window:     
         js.executeScript("history.go(0)");
         
-   //How to get the text of a particular web element:
+        //How to get the text of a particular web element:
         String text = js.executeScript("return document.getElementById('btn2').innerHTML").toString();
         System.out.println("WebElement Text is : "+ text);
         
-   //How to get the title of the WebPage:
+        //How to get the title of the WebPage:
         String text1 = js.executeScript("return document.title").toString();
         System.out.println("Page Title is : "+ text1);
         

@@ -5,9 +5,9 @@ import java.util.Iterator;
 import org.testng.annotations.Test;
 public class ArrayListConsept {
 	
-	    @Test
-	    public  void main() {
-		int a [] = new int [3];     // static array size is fixed
+	     @Test
+	     public  void main() {
+		 int a [] = new int [3]; //Static array size is fixed
 		
 		// Dynamic array -- Array list
 		// 1. can contain duplicate values/ Element
@@ -15,10 +15,7 @@ public class ArrayListConsept {
 		// 3. synchronization
 		// 4. Allows random access to fetch the element because it stores the values on the basis of index
 		
-		
-		
-		
-		 //Hash map is an implements map interface
+	       //Hash map is an implements map interface
 		   //Extends Abstract Map
 		   //It contains only unique elements
 		   //Store the values key value pair
@@ -32,7 +29,7 @@ public class ArrayListConsept {
 		 ar.add(20); // 1
 		 ar.add(30); // 2
 		 
-		 System.out.println(ar.size()); // yellow means non generic array list object
+		 System.out.println(ar.size()); //yellow means non generic array list object
 		 
 		 ar.add(40);     // 3
 		 ar.add(50);     // 4
@@ -45,20 +42,20 @@ public class ArrayListConsept {
 		 System.out.println(ar.size()); // size of array list
 		 System.out.println(ar.get(4)); // to get the value from an index
 		 
-		 // to print all the values from array list/ array: so use:
+		 //to print all the values from array list/ array: so use:
 		 //1. for loop
 		 //2. using iterator
 		 for(int i=0; i<ar.size(); i++) {
 		 System.out.println(ar.get(i));
 		 }
-	 // non generic vs generic
+	     // non generic vs generic
 		 ArrayList<Integer> ar1 = new ArrayList<Integer>();
 		 ar1.add(100);
-		// this is call generic that means which data type i define inside <data type>
-		// its not support after jdk 1.5
-		ArrayList<String> ar2 = new ArrayList<String>();
-		ar2.add("test");
-		ar2.add("selenium");
+		 // this is call generic that means which data type i define inside <data type>
+		 // its not support after jdk 1.5
+		 ArrayList<String> ar2 = new ArrayList<String>();
+		 ar2.add("test");
+		 ar2.add("selenium");
 		
 		//ArrayList<E> ar3 = new ArrayList<E>();
 		

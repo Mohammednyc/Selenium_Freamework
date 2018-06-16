@@ -11,24 +11,19 @@ public class SingleTone {
 	
    private static SingleTone  Singleton_instance = null;
    private String str;
-   
    private  SingleTone() {
-   str = "Hey, i am using SingleTone class pattern";
-   }
+   str = "Hey, i am using SingleTone class pattern";}
    public static SingleTone getinstence() {
    if(Singleton_instance == null)
    Singleton_instance = new SingleTone ();
    return Singleton_instance;
-	   
    }
    public static void main(String[] args) {
    SingleTone x =  SingleTone.getinstence();
    SingleTone y =  SingleTone.getinstence();
    SingleTone z =  SingleTone.getinstence();
-   
    x.str = (x.str).toUpperCase();
    System.out.println(x.str);
    System.out.println(y.str);
    System.out.println(z.str);
-   
-}}
+   }}

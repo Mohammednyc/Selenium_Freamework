@@ -39,22 +39,18 @@ public class RobotClass {
 	   // Release Enter
 	   r.keyRelease(KeyEvent.VK_ENTER);}}*/
 
-public class FileUploadWithRobot
-{
-    public static void main(String args[]) throws Exception
-    {
+        public class FileUploadWithRobot{
+        public static void main(String args[]) throws Exception{
         Robot robot = new Robot();
         System.setProperty("webdriver.gecko.driver","./DriverBrowser/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
  
         driver.get("http://demo.automationtesting.in/Register.html");
         driver.findElement(By.id("imagesrc")).click();
- 
         robot.setAutoDelay(2000);
  
         StringSelection selection = new StringSelection("D:\\Selenium\\Clean.bat");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
- 
         robot.setAutoDelay(1000);
  
         robot.keyPress(KeyEvent.VK_CONTROL);
@@ -66,7 +62,5 @@ public class FileUploadWithRobot
         robot.setAutoDelay(1000);
  
         robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
-    }
-}
+        robot.keyRelease(KeyEvent.VK_ENTER); }}
 

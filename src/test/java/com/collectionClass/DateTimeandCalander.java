@@ -3,12 +3,9 @@ package com.collectionClass;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-public class DateTimeandCalander {
+    public class DateTimeandCalander {
 	
 	public static void main(String[] args) {
-		
-	
 	Date d = new Date();
 	System.out.println(d.toString());  //Sat Mar 10 22:59:32 EST 2018
 	
